@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/components/XltRegion/index.vue?b977</title>
+    <meta charset="utf-8"/>
+    <link href="../../../prettify.css" rel="stylesheet"/>
+    <link href="../../../base.css" rel="stylesheet"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/components/XltRegion</a>
+            index.vue?b977</h1>
+        <div class='clearfix'>
+
+            <div class='fl pad1y space-right2'>
+                <span class="strong">92.31% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>12/13</span>
+            </div>
+
+
+            <div class='fl pad1y space-right2'>
+                <span class="strong">93.75% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>15/16</span>
+            </div>
+
+
+            <div class='fl pad1y space-right2'>
+                <span class="strong">87.5% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>7/8</span>
+            </div>
+
+
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>3/3</span>
+            </div>
+
+
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for
+            the previous block.
+        </p>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">60x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">265x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var render = function () {var _vm=this;var _h=_vm.$createElement;<span
+        class="branch-1 cbranch-no" title="branch not covered">var _c=_vm._self._c||_h;r</span>eturn _c('div',{ref:"region",staticClass:"city-region-container"},[_c('div',{staticClass:"city-region-input"},[_c('input',{staticClass:"city-region-input__inner",attrs:{"type":"button","readonly":"","value":_vm.selectValue},on:{"click":_vm.openDropdown}}),_c('div',{staticClass:"city-region-input__suffix"},[(_vm.selectValue &amp;&amp; _vm.selectValue !== '请选择')?_c('close-icon',{staticClass:"city-region-input__clear",nativeOn:{"click":function($event){return _vm.clearSelectValue.apply(null, arguments)}}}):_c('dropdown-icon',{attrs:{"is-open-menu":_vm.isOpenMenu},nativeOn:{<span
+        class="fstat-no" title="function not covered">"click":function($event){<span class="cstat-no"
+                                                                                     title="statement not covered">r</span>eturn _vm.openDropdown.apply(null, arguments)}}})</span>],1)]),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.isOpenMenu),expression:"isOpenMenu"}],staticClass:"city-region-menu",on:{"mouseenter":_vm.mouseenterInput,"mouseleave":_vm.mouseleaveInput}},[_c('div',{staticClass:"top-bar"},_vm._l((_vm.activeTopBar),function(item,index){return _c('div',{key:index,class:{
+                     'top-bar__item': true,
+                     'top-bar__item--active': item.value === _vm.activeTab,
+                 },on:{"click":function($event){return _vm.onTopBarActive(item.value, index)}}},[_c('span',{directives:[{name:"show",rawName:"v-show",value:(item.value === 'province' &amp;&amp; _vm.activeList.province.length &gt; 0),expression:"item.value === 'province' &amp;&amp; activeList.province.length &gt; 0"}]},[_vm._v(_vm._s(item.label))]),_c('span',{directives:[{name:"show",rawName:"v-show",value:(item.value === 'city' &amp;&amp; _vm.activeList.city.length &gt; 0),expression:"item.value === 'city' &amp;&amp; activeList.city.length &gt; 0"}]},[_vm._v(_vm._s(item.label))]),_c('span',{directives:[{name:"show",rawName:"v-show",value:(item.value === 'area' &amp;&amp; _vm.activeList.area.length &gt; 0),expression:"item.value === 'area' &amp;&amp; activeList.area.length &gt; 0"}]},[_vm._v(_vm._s(item.label))]),_c('span',{directives:[{name:"show",rawName:"v-show",value:(item.value === 'street' &amp;&amp; _vm.activeList.street.length &gt; 0),expression:"item.value === 'street' &amp;&amp; activeList.street.length &gt; 0"}]},[_vm._v(_vm._s(item.label))])])}),0),_c('div',{staticClass:"city-region-menu__content"},[_c('div',{staticClass:"city-region-menu__item"},[_c('div',{staticClass:"operate"},[_c('span',{staticClass:"operate-left"},[_vm._v("选择"+_vm._s(_vm.topBar[_vm.activeTabIndex].label))]),_c('span',{staticClass:"operate-right cursor",on:{"click":function($event){return _vm.onUnSelectSaveAddress(_vm.activeTab)}}},[_vm._v("暂不选择")])]),_c('div',{staticClass:"city-region-menu__item-span"},_vm._l((_vm.activeList[_vm.activeTab]),function(item){return _c('span',{key:item.i,class:[item.i === _vm.activeInfo[_vm.activeTab].i ? 'is-active' : ''],on:{"click":function($event){return _vm.selectNode(item)}}},[_vm._v(_vm._s(item.n))])}),0)])])])])}
+var staticRenderFns = []
+&nbsp;
+export { render, staticRenderFns }</pre></td></tr></table></pre>
+
+    <div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+    Code coverage generated by
+    <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
+    at Sun Jul 09 2023 19:24:40 GMT+0800 (China Standard Time)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+    window.onload = function () {
+        prettyPrint();
+    };
+</script>
+<script src="../../../sorter.js"></script>
+<script src="../../../block-navigation.js"></script>
+</body>
+</html>

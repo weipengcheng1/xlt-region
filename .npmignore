@@ -1,0 +1,28 @@
+# 忽略目录
+examples/
+packages/
+coverage/
+public/
+tests/
+src/
+.idea/
+.vscode/
+node_modules/
+# 忽略指定文件
+vue.config.js
+babel.config.js
+*.map
+.husky
+.cz-config.js
+.editorconfig
+.eslintignore
+.eslintrc.js
+.gitignore
+.prettierrc.js
+.stylelintrc.js
+.prettierignore
+commitlint.config.js
+jsconfig.json
+package.json
+.env.*
+jest.config.js
